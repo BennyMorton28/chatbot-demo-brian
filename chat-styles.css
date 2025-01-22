@@ -16,7 +16,7 @@
 
   /* Dimensions and spacing */
   --chat--spacing: 1rem;
-  --chat--border-radius: 12px;
+  --chat--border-radius: 0px;
   --chat--transition-duration: 0.15s;
   --chat--window--width: 450px;
   --chat--window--height: 650px;
