@@ -21,6 +21,7 @@
   --chat--window--width: 450px;
   --chat--window--height: 650px;
   --chat--box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --chat--window--border: none;
 
   /* Header styles */
   --chat--header-height: auto;
@@ -58,7 +59,7 @@
 .n8n-chat-window,
 .n8n-chat-toggle {
   box-shadow: var(--chat--box-shadow) !important;
-  border: none !important;
+  border: var(--chat--window--border) !important;
 }
 
 /* Enhanced New Conversation button */
