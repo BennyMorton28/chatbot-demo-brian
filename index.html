@@ -2082,6 +2082,21 @@ _hsp.push(['addPrivacyConsentListener', function(consent){
 
 <!-- Add n8n chat styles and script -->
 <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<style>
+  :root {
+    /* Rounded corners for the chat window */
+    --chat--border-radius: 12px;
+    
+    /* Smaller text sizes */
+    --chat--message--font-size: 0.9rem;
+    --chat--heading--font-size: 1.5em;
+    --chat--subtitle--font-size: 0.9em;
+    
+    /* Adjust line height for better readability */
+    --chat--message-line-height: 1.5;
+    --chat--subtitle--line-height: 1.5;
+  }
+</style>
 <script type="module">
   import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
@@ -2107,6 +2122,7 @@ _hsp.push(['addPrivacyConsentListener', function(consent){
 </div><!--end row-wrapper -->
 
 </div><!--end widget-span -->
+</div>
 </div>
 </div>
 </div>
