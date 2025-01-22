@@ -2108,6 +2108,21 @@ _hsp.push(['addPrivacyConsentListener', function(consent){
   .n8n-chat-window,
   .n8n-chat-toggle {
     box-shadow: var(--chat--box-shadow) !important;
+    border: none !important; /* Remove white border */
+    background: transparent !important;
+  }
+
+  /* Style the New Conversation button */
+  .n8n-chat-welcome-screen button {
+    font-size: 1.1rem !important;
+    padding: 12px 24px !important;
+    box-shadow: var(--chat--box-shadow) !important;
+    transition: transform 0.2s ease !important;
+  }
+
+  /* Add hover effect to the button */
+  .n8n-chat-welcome-screen button:hover {
+    transform: translateY(-1px) !important;
   }
 </style>
 <script type="module">
