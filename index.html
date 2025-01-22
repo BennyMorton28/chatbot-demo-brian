@@ -2082,49 +2082,7 @@ _hsp.push(['addPrivacyConsentListener', function(consent){
 
 <!-- Add n8n chat styles and script -->
 <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-<style>
-  :root {
-    /* Rounded corners for the chat window */
-    --chat--border-radius: 12px;
-    
-    /* Smaller text sizes */
-    --chat--message--font-size: 0.9rem;
-    --chat--heading--font-size: 1.5em;
-    --chat--subtitle--font-size: 0.9em;
-    
-    /* Adjust line height for better readability */
-    --chat--message-line-height: 1.5;
-    --chat--subtitle--line-height: 1.5;
-    
-    /* Adjust chat window dimensions */
-    --chat--window--width: 450px;  /* Default is 400px */
-    --chat--window--height: 650px; /* Default is 600px */
-    
-    /* Add drop shadow effect */
-    --chat--box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
-
-  /* Apply drop shadow to both the chat window and toggle button */
-  .n8n-chat-window,
-  .n8n-chat-toggle {
-    box-shadow: var(--chat--box-shadow) !important;
-    border: none !important; /* Remove white border */
-    background: transparent !important;
-  }
-
-  /* Style the New Conversation button */
-  .n8n-chat-welcome-screen button {
-    font-size: 1.1rem !important;
-    padding: 12px 24px !important;
-    box-shadow: var(--chat--box-shadow) !important;
-    transition: transform 0.2s ease !important;
-  }
-
-  /* Add hover effect to the button */
-  .n8n-chat-welcome-screen button:hover {
-    transform: translateY(-1px) !important;
-  }
-</style>
+<link href="./chat-styles.css" rel="stylesheet" />
 <script type="module">
   import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
