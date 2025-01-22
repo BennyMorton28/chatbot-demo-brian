@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>N8N Chatbot Demo</title>
+</head>
+<body>
+  <h1>Welcome to the n8n Chatbot Demo</h1>
+  <div id="chat-container"></div>
+
+  <!-- Include the n8n Chat script from a CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@n8n/chat@latest/dist/webchat.umd.js"></script>
+
+  <!-- Initialize the Chatbot -->
+  <script>
+    new Chat({
+      // Replace this with your actual N8N webhook URL:
+      apiUrl: 'https://noyes.app.n8n.cloud/webhook/1f83e8ac-d465-454a-8327-cef7f0149cb1/chat',
+      container: '#chat-container'
+    });
+  </script>
+</body>
+</html>
