@@ -2095,6 +2095,19 @@ _hsp.push(['addPrivacyConsentListener', function(consent){
     /* Adjust line height for better readability */
     --chat--message-line-height: 1.5;
     --chat--subtitle--line-height: 1.5;
+    
+    /* Adjust chat window dimensions */
+    --chat--window--width: 450px;  /* Default is 400px */
+    --chat--window--height: 650px; /* Default is 600px */
+    
+    /* Add drop shadow effect */
+    --chat--box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Apply drop shadow to both the chat window and toggle button */
+  .n8n-chat-window,
+  .n8n-chat-toggle {
+    box-shadow: var(--chat--box-shadow) !important;
   }
 </style>
 <script type="module">
