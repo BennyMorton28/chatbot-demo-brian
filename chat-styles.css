@@ -14,7 +14,7 @@
 	--chat--color-typing: #404040;
 
 	--chat--spacing: 1rem;
-	--chat--border-radius: 0.75rem;
+	--chat--border-radius: 1rem;
 	--chat--transition-duration: 0.15s;
 
 	--chat--window--width: 450px;
@@ -52,4 +52,7 @@
 	--chat--toggle--active--background: var(--chat--color-primary-shade-100);
 	--chat--toggle--color: var(--chat--color-white);
 	--chat--toggle--size: 64px;
+
+	--chat--border-color: var(--chat--color-dark);
+	--chat--border-width: 1px;
 }
