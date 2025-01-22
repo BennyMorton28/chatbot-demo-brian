@@ -1,0 +1,74 @@
+:root {
+  /* Base colors */
+  --chat--color-primary: #e74266;
+  --chat--color-primary-shade-50: #db4061;
+  --chat--color-primary-shade-100: #cf3c5c;
+  --chat--color-secondary: #20b69e;
+  --chat--color-secondary-shade-50: #1ca08a;
+  --chat--color-white: #ffffff;
+  --chat--color-light: #f2f4f8;
+  --chat--color-light-shade-50: #e6e9f1;
+  --chat--color-light-shade-100: #c2c5cc;
+  --chat--color-medium: #d2d4d9;
+  --chat--color-dark: #101330;
+  --chat--color-disabled: #777980;
+  --chat--color-typing: #404040;
+
+  /* Dimensions and spacing */
+  --chat--spacing: 1rem;
+  --chat--border-radius: 12px;
+  --chat--transition-duration: 0.15s;
+  --chat--window--width: 450px;
+  --chat--window--height: 650px;
+  --chat--box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  /* Header styles */
+  --chat--header-height: auto;
+  --chat--header--padding: var(--chat--spacing);
+  --chat--header--background: var(--chat--color-dark);
+  --chat--header--color: var(--chat--color-light);
+  --chat--header--border-top: none;
+  --chat--header--border-bottom: none;
+  --chat--heading--font-size: 1.5em;
+  --chat--subtitle--font-size: 0.9em;
+  --chat--subtitle--line-height: 1.5;
+
+  /* Message styles */
+  --chat--message--font-size: 0.9rem;
+  --chat--message--padding: var(--chat--spacing);
+  --chat--message--border-radius: var(--chat--border-radius);
+  --chat--message-line-height: 1.5;
+  --chat--message--bot--background: var(--chat--color-white);
+  --chat--message--bot--color: var(--chat--color-dark);
+  --chat--message--bot--border: none;
+  --chat--message--user--background: var(--chat--color-secondary);
+  --chat--message--user--color: var(--chat--color-white);
+  --chat--message--user--border: none;
+  --chat--message--pre--background: rgba(0, 0, 0, 0.05);
+
+  /* Toggle button styles */
+  --chat--toggle--background: var(--chat--color-primary);
+  --chat--toggle--hover--background: var(--chat--color-primary-shade-50);
+  --chat--toggle--active--background: var(--chat--color-primary-shade-100);
+  --chat--toggle--color: var(--chat--color-white);
+  --chat--toggle--size: 64px;
+}
+
+/* Custom styles for chat window and toggle */
+.n8n-chat-window,
+.n8n-chat-toggle {
+  box-shadow: var(--chat--box-shadow) !important;
+  border: none !important;
+}
+
+/* Enhanced New Conversation button */
+.n8n-chat-welcome-screen button {
+  font-size: 1.25rem !important;
+  padding: 16px 32px !important;
+  box-shadow: var(--chat--box-shadow) !important;
+  transition: transform 0.2s ease !important;
+}
+
+.n8n-chat-welcome-screen button:hover {
+  transform: translateY(-1px) !important;
+} 
